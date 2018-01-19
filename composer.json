@@ -1,16 +1,16 @@
 {
-  "name": "Qstraza/TableauPHP",
+  "name": "hashbangcode/tableau-php-api",
   "description" : "A library that allows integration with the Tableau API.",
   "type" : "library",
   "license": "MIT",
   "keywords" : [
     "tableau"
   ],
-  "homepage" : "https://github.com/qstraza/tableau-php-api",
+  "homepage" : "https://github.com/hashbangcode/tableau-php-api",
   "authors" : [
     {
-      "name" : "Rok Avbar",
-      "email" : "rok@rojal.si"
+      "name" : "Philip Norton",
+      "email" : "philipnorton42@gmail.com"
     }
   ],
   "require" : {
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Qstraza\\TableauPHP\\": "src"
+      "Hashbangcode\\TableauPHP\\": "src"
     }
   }
 }
