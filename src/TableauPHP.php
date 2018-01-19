@@ -53,9 +53,9 @@ class TableauPHP {
     $curl = curl_init();
 
     $headers = [
-      "accept: application/json",
-      "cache-control: no-cache",
-      "content-type: application/json",
+      "Accept: application/json",
+      "Cache-control: no-cache",
+      "Content-type: application/json",
     ];
 
     if ($this->token) {
@@ -73,6 +73,7 @@ class TableauPHP {
       CURLOPT_HTTPHEADER => $headers,
       CURLOPT_HEADER => TRUE,
     ));
+
     if ($body) {
       curl_setopt($curl, CURLOPT_POSTFIELDS, \GuzzleHttp\json_encode($body));
     }
@@ -84,6 +85,7 @@ class TableauPHP {
     $err = curl_error($curl);
     $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
+
     if ($err) {
       throw new \Exception("Server returned an error: " . $err);
     }
