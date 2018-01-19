@@ -152,6 +152,16 @@ class TableauPHP {
   }
 
   /**
+   * @param $username
+   *
+   * @return array
+   */
+  public function getUser($username) {
+    $username = urlencode($username);
+    return $this->sendReq("sites/$this->siteId/users?filter=name:eq:" . $username, NULL, "GET");
+  }
+
+  /**
    * Adds a user into the group.
    *
    * @param string $userId
