@@ -1,6 +1,6 @@
 <?php
 
-namespace Qstraza\TableauPHP;
+namespace Hashbangcode\TableauPHP;
 
 /**
  * Tableau class used to make PHP calls based on Tableau docs.
